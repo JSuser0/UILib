@@ -170,20 +170,20 @@ function uiClass:Create(name)
 	-- [ VARIABLES ] --
 	--< Frames >--
 	local screen = uiClass:CreateScreen()
-	local base = uiClass:CreateFrame(screen, {0.32, 0, 0.463, 0}, {0.315, 0, 0.323, 0})
-	local side = uiClass:CreateFrame(base, {0.279, 0, 0.92, 0}, {0, 0, 0.08, 0})
-	local top = uiClass:CreateFrame(base, {1, 0, 0.074, 0}, {-0, 0, -0.001, 0})
+	local base = uiClass:CreateFrame(screen, {0, 516, 0, 359}, {0.262, 0, 0.261, 0})
+	local side = uiClass:CreateFrame(base, {0, 136, 0, 329}, {-0.001, 0, 0.082, 0})
+	local top = uiClass:CreateFrame(base, {0, 516, 0, 30}, {-0.001, 0, -0.001, 0})
 	
 	--< Buttons >--
-	local exitButton = uiClass:CreateButton(base, {0.039, 0, 0.047, 0}, {0.946, 0, 0.011, 0}, "")
+	local exitButton = uiClass:CreateButton(base, {0, 19, 0, 19}, {0.951, 0, 0.013, 0}, "")
 	exitButton.BackgroundColor3 = Color3.fromRGB(212, 14, 34)
 	exitButton.UIStroke.Color = Color3.fromRGB(136, 8, 25)
 	exitButton.TextButton.BackgroundColor3 = Color3.fromRGB(212, 14, 34)
 	
 	--< Title >--
 	local title = uiClass:CreateTitle(top, name, 12.5)
-	title.Position = UDim2.new(-0.05, 0, 0, 0)
-	title.Size = UDim2.new(0.25, 0, 1.063, 0)
+	title.Position = UDim2.new(0.016, 0, 0, 0)
+	title.Size = UDim2.new(0.174, 0, 1, 0)
 	
 	--< Returning >--
 	return screen
